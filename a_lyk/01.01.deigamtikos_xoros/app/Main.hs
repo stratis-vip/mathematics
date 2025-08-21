@@ -5,6 +5,7 @@ import System.Exit (exitSuccess)
 import XrcsA1
 import XrcsA2
 import XrcsA3
+import XrcsA4
 
 -- import System.Process (callCommand)
 -- import Test.Hspec
@@ -20,12 +21,14 @@ main = do
     \1. Άσκηση 1\n\
     \2. Άσκηση 2\n\
     \3. Άσκηση 3\n\
+    \4. Άσκηση 4\n\
     \\nΔώστε επιλογή (0 για έξοδο)."
   option <- getLine
   case read option :: Int of
     1 -> execute exercise_1
     2 -> execute exercise_2
     3 -> execute exercise_3
+    4 -> execute exercise_4
     _ -> exitSuccess
 
 execute :: IO () -> IO ()

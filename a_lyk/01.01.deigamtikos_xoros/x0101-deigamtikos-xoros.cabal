@@ -65,6 +65,7 @@ executable x0101-deigamtikos-xoros
     other-modules:  XrcsA1
                   , XrcsA2
                   , XrcsA3
+                  , XrcsA4
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
